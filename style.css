@@ -16,15 +16,6 @@ body {
     background-size: cover;
 }
 
-.page {
-    display: none;
-    min-height: calc(100vh - 6rem);
-}
-
-.page.active {
-    display: block;
-}
-
 /* Navbar */
 
 #navbar {
@@ -79,7 +70,7 @@ body {
 
 /* Hero*/
 
-#home #hero {
+#hero {
     display: flex;
     flex-direction: row;
     justify-content: center;  
@@ -91,7 +82,7 @@ body {
 
 /* Hero Content */
 
-#home #hero .hero-content {
+#hero .hero-content {
     display: flex;
     flex-direction: column;
     justify-content: center;  
@@ -101,14 +92,14 @@ body {
 
 /* Hero Top */
 
-#home #hero .hero-top h1 {
+#hero .hero-top h1 {
     font-size: 5rem;
     color: white;
     text-shadow: 0 0.2rem 0.7rem rgba(255, 255, 255, 0.5);
     animation: bounce-in 1s ease-in-out;
 }
 
-#home #hero .hero-top h2 {
+#hero .hero-top h2 {
     color: white;
     font-size: 1.5rem;
     text-shadow: 0 0.2rem 0.7rem rgba(255, 255, 255, 0.5);
@@ -117,12 +108,12 @@ body {
 
 /* Hero Bottom */
 
-#home #hero .hero-bottom {
+#hero .hero-bottom {
     position: relative;
     top: 1rem;
 }
 
-#home #hero .hero-bottom .browse-characters {
+#hero .hero-bottom .browse-characters {
     background: transparent;
     border: transparent;
     box-shadow: 0 0.2rem 0.7rem orange;
@@ -136,7 +127,7 @@ body {
     transition: all 0.3s ease;
 }
 
-#home #hero .hero-bottom .browse-characters:hover {
+#hero .hero-bottom .browse-characters:hover {
     transform: translateY(-5px) scale(1.1);
     box-shadow: 0 0.4rem 1.2rem orange;
     color: white;
@@ -145,7 +136,7 @@ body {
 
 /* Hero-Animation */
 
-#home #hero .animation .logo-gif {
+#hero .animation .logo-gif {
     animation: bounce-in 1s ease-in-out;
 }
 
@@ -161,3 +152,82 @@ body {
 
 /* Characters Page */
 
+/* Ch-Hero */
+
+#ch-hero {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 6rem);
+    text-align: center;
+}
+
+#ch-hero .heading h1 {
+    text-align: center;
+    padding: 2rem;
+    color: #ff9900;
+    font-weight: 900;
+    font-size: 4rem;
+    text-shadow: 0 0.5rem 1rem black;
+    animation: fade-in 1s ease;
+    transition: all 0.3s ease;
+}
+
+@keyframes fade-in {
+    from {
+
+        transform: translateY(3rem);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+#ch-hero .ch-searchBar legend {
+    font-weight: 500;
+    font-size: 1.3rem;
+    animation: fade-in 1s ease;
+    transition: all 0.3s ease;
+}
+
+#ch-hero .ch-searchBar input {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.1) 50%);
+    border: 0.1rem solid black;
+    box-shadow: 0 0.2rem 0.7rem black;
+    padding: 0.5rem;
+    width: 30vw;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    font-weight: 500;
+    animation: fade-in 1s ease;
+    transition: all 0.3s ease;
+}
+
+#ch-hero .ch-searchBar input::placeholder {
+    color: rgb(44, 42, 42);
+}
+
+#ch-hero .ch-searchBar input:focus {
+    outline: 0.12rem solid orange;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.2) 50%);
+}
+
+#ch-hero .ch-searchBar button {
+    font-size: 1rem;
+    margin-left: 2rem;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.1) 50%);
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: 0.1rem solid black;
+    box-shadow: 0 0.2rem 0.7rem black;
+    cursor: pointer;
+    animation: fade-in 1s ease;
+    transition: all 0.3s ease;
+}
+
+#ch-hero .ch-searchBar button:hover {
+    border: 0.1rem solid orange;
+    transform: scale(1.1);
+    box-shadow: 0 0.2rem 0.7rem orange;
+}
