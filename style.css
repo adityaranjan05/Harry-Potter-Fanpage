@@ -10,7 +10,7 @@
 
 body {
     min-height: 100vh;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.2) 50%), url(Assets/Background.png);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.25) 50%, rgba(0, 0, 0, 0.25) 50%), url(Assets/Background.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -70,24 +70,39 @@ body {
 
 #hero {
     display: flex;
+    flex-direction: row;
+    justify-content: center;  
+    align-items: center;
+    height: calc(100vh - 6rem);
+    text-align: center;
+    gap: 5rem;
+}
+
+#hero .hero-content {
+    display: flex;
     flex-direction: column;
     justify-content: center;  
     align-items: center;
-    height: calc(100vh - 6rem);           
     text-align: center;
 }
+
+/* Hero Top */
 
 #hero .hero-top h1 {
     font-size: 5rem;
     color: white;
     text-shadow: 0 0.2rem 0.7rem rgba(255, 255, 255, 0.5);
+    animation: bounce-in 0.8s ease-in-out;
 }
 
 #hero .hero-top h2 {
     color: white;
     font-size: 1.5rem;
     text-shadow: 0 0.2rem 0.7rem rgba(255, 255, 255, 0.5);
+    animation: bounce-in 0.8s ease-in-out;
 }
+
+/* Hero Bottom */
 
 #hero .hero-bottom {
     position: relative;
@@ -101,7 +116,32 @@ body {
     padding: 0.5rem;
     font-size: 1.1rem;
     border-radius: 2rem;
-    color: rgb(255, 190, 69);
+    color: orange;
     font-weight: 600;
     cursor: pointer;
+    animation: bounce-in 0.8s ease-in-out;
+    transition: all 0.3s ease;
+}
+
+#hero .hero-bottom .browse-characters:hover {
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 0.4rem 1.2rem orange;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+/* Hero-Animation */
+
+#hero .animation .logo-gif {
+    animation: bounce-in 0.8s ease-in-out;
+}
+
+@keyframes bounce-in {
+    from {
+        transform: translateY(8vh);
+    }
+
+    to {
+        transform: translateY(0vh);
+    }
 }
