@@ -15,29 +15,31 @@
   </head>
   <body>
     <nav id="navbar">
-      <img src="Assets/Logo Favicon.png" class="logo" />
+      <a href="index.html"><img src="Assets/Logo Favicon.png" class="logo"/></a>
       <div class="links">
-        <a href="#" onclick="">Home</a>
-        <a href="#" onclick="">Characters</a>
-        <a href="#" onclick="">Houses</a>
-        <a href="#" onclick="">Spells</a>
-        <a href="#" onclick="">Books</a>
-        <a href="#" onclick="">About</a>
+        <a href="#" data-page="home">Home</a>
+        <a href="#" data-page="characters">Characters</a>
+        <a href="#" data-page="houses">Houses</a>
+        <a href="#" data-page="spells">Spells</a>
+        <a href="#" data-page="books">Books</a>
+        <a href="#" data-page="about">About</a>
       </div>
     </nav>
-    <section id="hero">
-      <div class="hero-content">
-        <div class="hero-top">
-            <h1>Explore the<br>Wizarding World</h1>
+    <section id="home" class="page active">
+      <section id="hero">
+        <div class="hero-content">
+          <div class="hero-top">
+            <h1>Explore the<br />Wizarding World</h1>
             <h2>Discover your favorite characters from Harry Potter</h2>
-        </div>
-        <div class="hero-bottom">
+          </div>
+          <div class="hero-bottom">
             <button class="browse-characters">Browse Characters</button>
+          </div>
         </div>
-      </div>
-      <div class="animation">
-        <img src="Assets/gif1.gif" class="logo-gif" alt="gif">
-      </div>
+        <div class="animation">
+          <img src="Assets/gif1.gif" class="logo-gif" alt="gif" />
+        </div>
+      </section>
     </section>
   </body>
   <script src="script.js"></script>

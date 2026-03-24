@@ -16,6 +16,15 @@ body {
     background-size: cover;
 }
 
+.page {
+    display: none;
+    min-height: calc(100vh - 6rem);
+}
+
+.page.active {
+    display: block;
+}
+
 /* Navbar */
 
 #navbar {
@@ -23,7 +32,7 @@ body {
     top: 0;
     z-index: 1000;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.2) 50%);
-    padding: 1rem 3rem;
+    padding: 0.6rem 3rem;
     box-shadow: 0 0.2rem 0.7rem black;
     display: flex;
     justify-content: space-between;
@@ -66,17 +75,19 @@ body {
     right: 0;
 }
 
-/* Hero Content */
+/* Hero*/
 
 #hero {
     display: flex;
     flex-direction: row;
     justify-content: center;  
     align-items: center;
-    height: calc(100vh - 6rem);
+    min-height: calc(100vh - 6rem);
     text-align: center;
     gap: 5rem;
 }
+
+/* Hero Content */
 
 #hero .hero-content {
     display: flex;
@@ -92,14 +103,14 @@ body {
     font-size: 5rem;
     color: white;
     text-shadow: 0 0.2rem 0.7rem rgba(255, 255, 255, 0.5);
-    animation: bounce-in 0.8s ease-in-out;
+    animation: bounce-in 1s ease-in-out;
 }
 
 #hero .hero-top h2 {
     color: white;
     font-size: 1.5rem;
     text-shadow: 0 0.2rem 0.7rem rgba(255, 255, 255, 0.5);
-    animation: bounce-in 0.8s ease-in-out;
+    animation: bounce-in 1s ease-in-out;
 }
 
 /* Hero Bottom */
@@ -119,7 +130,7 @@ body {
     color: orange;
     font-weight: 600;
     cursor: pointer;
-    animation: bounce-in 0.8s ease-in-out;
+    animation: bounce-in 1s ease-in-out;
     transition: all 0.3s ease;
 }
 
@@ -127,13 +138,13 @@ body {
     transform: translateY(-5px) scale(1.1);
     box-shadow: 0 0.4rem 1.2rem orange;
     color: white;
-    transition: all 0.3s ease;
+    transition: all 0.4s ease;
 }
 
 /* Hero-Animation */
 
 #hero .animation .logo-gif {
-    animation: bounce-in 0.8s ease-in-out;
+    animation: bounce-in 1s ease-in-out;
 }
 
 @keyframes bounce-in {
