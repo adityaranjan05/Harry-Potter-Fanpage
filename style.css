@@ -75,9 +75,11 @@ body {
     right: 0;
 }
 
+/* Home Page */
+
 /* Hero*/
 
-#hero {
+#home #hero {
     display: flex;
     flex-direction: row;
     justify-content: center;  
@@ -89,7 +91,7 @@ body {
 
 /* Hero Content */
 
-#hero .hero-content {
+#home #hero .hero-content {
     display: flex;
     flex-direction: column;
     justify-content: center;  
@@ -99,14 +101,14 @@ body {
 
 /* Hero Top */
 
-#hero .hero-top h1 {
+#home #hero .hero-top h1 {
     font-size: 5rem;
     color: white;
     text-shadow: 0 0.2rem 0.7rem rgba(255, 255, 255, 0.5);
     animation: bounce-in 1s ease-in-out;
 }
 
-#hero .hero-top h2 {
+#home #hero .hero-top h2 {
     color: white;
     font-size: 1.5rem;
     text-shadow: 0 0.2rem 0.7rem rgba(255, 255, 255, 0.5);
@@ -115,12 +117,12 @@ body {
 
 /* Hero Bottom */
 
-#hero .hero-bottom {
+#home #hero .hero-bottom {
     position: relative;
     top: 1rem;
 }
 
-#hero .hero-bottom .browse-characters {
+#home #hero .hero-bottom .browse-characters {
     background: transparent;
     border: transparent;
     box-shadow: 0 0.2rem 0.7rem orange;
@@ -134,7 +136,7 @@ body {
     transition: all 0.3s ease;
 }
 
-#hero .hero-bottom .browse-characters:hover {
+#home #hero .hero-bottom .browse-characters:hover {
     transform: translateY(-5px) scale(1.1);
     box-shadow: 0 0.4rem 1.2rem orange;
     color: white;
@@ -143,7 +145,7 @@ body {
 
 /* Hero-Animation */
 
-#hero .animation .logo-gif {
+#home #hero .animation .logo-gif {
     animation: bounce-in 1s ease-in-out;
 }
 
@@ -156,3 +158,6 @@ body {
         transform: translateY(0vh);
     }
 }
+
+/* Characters Page */
+
