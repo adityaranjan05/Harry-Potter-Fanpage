@@ -163,10 +163,21 @@ body {
 
 #ch-hero .heading h1 {
     text-align: center;
-    padding: 2rem;
+    margin-top: 2rem;
     color: #ff9900;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 4rem;
+    text-shadow: 0 0.5rem 1rem black;
+    animation: fade-in 1s ease;
+    transition: all 0.3s ease;
+}
+
+#ch-hero .heading h2 {
+    text-align: center;
+    margin-top: 1rem;
+    color: #ffd900;
+    font-weight: 600;
+    font-size: 1.3rem;
     text-shadow: 0 0.5rem 1rem black;
     animation: fade-in 1s ease;
     transition: all 0.3s ease;
@@ -184,8 +195,8 @@ body {
 }
 
 #ch-hero .ch-searchBar {
-    padding: 4rem;
-    margin-top: -2rem;
+    /* padding: 4rem; */
+    margin: 4rem 0;
 }
 
 #ch-hero .ch-searchBar input {
@@ -199,15 +210,15 @@ body {
     font-weight: 500;
     animation: fade-in 1s ease;
     transition: all 0.3s ease;
-    color: rgb(172, 171, 171);
+    color: rgb(255, 255, 255);
 }
 
 #ch-hero .ch-searchBar input::placeholder {
-    color: rgb(92, 88, 88);
+    color: rgb(148, 145, 145);
 }
 
 #ch-hero .ch-searchBar input:focus {
-    outline: 0.12rem solid orange;
+    outline: 0.14rem solid orange;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.2) 50%);
 }
 
@@ -226,8 +237,8 @@ body {
 }
 
 #ch-hero .ch-searchBar button:hover {
-    border: 0.1rem solid orange;
-    transform: scale(1.1);
+    border: 0.2rem solid orange;
+    transform: scale(1.2);
     box-shadow: 0 0.2rem 0.7rem orange;
 }
 
@@ -235,9 +246,9 @@ body {
 
 #ch-cards {
     display: grid;
-    max-width: 70vw;
-    margin: 3rem auto;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 2fr));
+    max-width: 80vw;
+    margin: auto;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 2fr));
     gap: 2rem;
     animation: fade-in 1s ease;
     transition: all 0.3s ease;
@@ -245,19 +256,28 @@ body {
 
 #ch-cards .cards {
     display: flex;
+    margin-bottom: 4rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 30rem;
-    width: 25rem;
+    height: 34rem;
+    width: 28rem;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.3) 50%);
     border-radius: 2rem;
     animation: fade-in 1s ease;
-    transition: all 0.3s ease;
+    transition: all 0.4s ease;
+    box-shadow: 0 0.2rem 0.9rem black;
+    z-index: 1;
+}
+
+#ch-cards .cards:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0.5rem 0.9rem black;
+    cursor: pointer;
 }
 
 #ch-cards .cards .image {
-    height: 23rem;
+    height: 25rem;
     width: max-content;
 }
 
