@@ -10,7 +10,7 @@
 
 body {
     min-height: 100vh;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.25) 50%, rgba(0, 0, 0, 0.25) 50%), url(Assets/Background.png);
+    
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -158,7 +158,6 @@ body {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    min-height: calc(100vh - 6rem);
     text-align: center;
 }
 
@@ -184,6 +183,11 @@ body {
     }
 }
 
+#ch-hero .ch-searchBar {
+    padding: 4rem;
+    margin-top: -2rem;
+}
+
 #ch-hero .ch-searchBar legend {
     font-weight: 500;
     font-size: 1.3rem;
@@ -195,7 +199,7 @@ body {
     background: linear-gradient(to top, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.1) 50%);
     border: 0.1rem solid black;
     box-shadow: 0 0.2rem 0.7rem black;
-    padding: 0.5rem;
+    padding: 0.7rem;
     width: 30vw;
     font-size: 1.2rem;
     border-radius: 1rem;
@@ -230,4 +234,22 @@ body {
     border: 0.1rem solid orange;
     transform: scale(1.1);
     box-shadow: 0 0.2rem 0.7rem orange;
+}
+
+/* Ch-Cards Section */
+
+#ch-cards {
+    display: grid;
+    max-width: 70vw;
+    margin: 2rem auto;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 2fr));
+    gap: 2rem;
+    animation: fade-in 1s ease;
+    transition: all 0.3s ease;
+}
+
+#ch-cards .cards {
+    height: 30rem;
+    width: 25rem;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.1) 50%);
 }
